@@ -1,0 +1,33 @@
+{
+    "name": "eslint-config-vue-typescript-cakkypamucm",
+    "version": "1.0.0",
+    "private": true,
+    "author": "Denis S. <cakkypamucm@yandex.ru>",
+    "main": "index.js",
+    "scripts": {
+        "eslint": "eslint . --cache --fix",
+        "prettier": "prettier . \"!(package)*.json\" --cache --cache-location .prettiercache --find-config-path --write",
+        "lint": "run-s eslint prettier"
+    },
+    "peerDependencies": {
+        "eslint": "^8.57.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^3.4.2"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.19.1",
+        "@typescript-eslint/parser": "^8.19.1",
+        "eslint-config-cakkypamucm": "github:cakkypamucm/eslint-config",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-vue-cakkypamucm": "github:cakkypamucm/eslint-config-vue",
+        "eslint-import-resolver-typescript": "^3.7.0",
+        "eslint-plugin-vue": "^9.32.0",
+        "vue-eslint-parser": "^9.4.3"
+    },
+    "engines": {
+        "node": ">=18.18"
+    }
+}
